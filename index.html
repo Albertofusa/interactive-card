@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Interactive-card</title>
+  </head>
+  <body>
+    <!--container-->
+    <main class="container">
+        <!--content-banner-->
+      <section class="banner__content">
+        <!--card-front-->
+        <article class="animation-cards-front banner__card__front">
+           <img class="banner__card__front--logo" src="/img/card-logo.svg" alt="logo">
+            <p class="banner__card__fornt--text">0000 0000 0000 0000</p>
+          <div class="banner__card__fornt__information">
+            <p class="banner__card__fornt--information--text">JANE APPLESEED</p>
+            <p class="banner__card__fornt--information--text">09/00</p>
+          </div>
+        </article>
+        <!--card-back-->
+        <img class="animation-cards-back banner__card__back" src="/img/bg-card-back.png" alt="card">
+      </section>
+      <!--content-form-->
+      <section class="form__content">
+        <form class="form__card" action="">
+         <div>
+          <label class="form__card__label" for="">CARDHOLDER NAME</label> <br>
+          <input class="form__card__input" type="text" name="name" id="name" placeholder="e.g. Jane Appleseed">
+         </div>
+         <div>
+          <label class="form__card__label" for="">CARD NUMBER</label> <br>
+          <input class="form__card__input" type="text" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000">
+         </div>
+        <div class="div-input">
+         <div>
+            <label class="form__card__label" for="">EXP. DATE (MM/YY)</label> <br>
+            <input class="form__card__input form__card__input__date" type="text" name="" id="" placeholder="MM">
+            <input class="form__card__input form__card__input__date" type="text" name="" id="" placeholder="YY">
+         </div>
+         <div>
+            <label class="form__card__label" for="">CVC</label> <br>
+            <input class="form__card__input form__card__input__date" type="text" name="cvc" id="cvc" placeholder="e.g. 123">
+         </div>
+        </div>
+        <!--button-->
+        <button class="form__button">Confirm</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
